@@ -79,7 +79,7 @@ namespace PWSched_dotnet_mvc.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Volunteer,ShiftDate,Location")] Shift shift)
+        public async Task<IActionResult> Create([Bind("ID,Volunteer,ShiftDate,Location, StartTime,EndTime")] Shift shift)
         {
             if (ModelState.IsValid)
             {
@@ -111,7 +111,7 @@ namespace PWSched_dotnet_mvc.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Volunteer,ShiftDate,Location")] Shift shift)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Volunteer,ShiftDate,Location,StartTime,EndTime")] Shift shift)
         {
             if (id != shift.ID)
             {

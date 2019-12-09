@@ -9,7 +9,7 @@ using PWSched_dotnet_mvc.Data;
 namespace PWSched_dotnet_mvc.Migrations
 {
     [DbContext(typeof(PWSchedContext))]
-    [Migration("20191205045249_InitialCreate")]
+    [Migration("20191209174453_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,10 +24,16 @@ namespace PWSched_dotnet_mvc.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<DateTime>("EndTime")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("Location")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("ShiftDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("StartTime")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Volunteer")

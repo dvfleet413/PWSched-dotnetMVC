@@ -32,6 +32,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Shifts[0].Location)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shifts[0].StartTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Shifts[0].EndTime)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -46,6 +52,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StartTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EndTime)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |

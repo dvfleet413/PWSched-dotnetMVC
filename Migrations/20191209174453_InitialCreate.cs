@@ -15,6 +15,8 @@ namespace PWSched_dotnet_mvc.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Volunteer = table.Column<string>(nullable: true),
                     ShiftDate = table.Column<DateTime>(nullable: false),
+                    StartTime = table.Column<DateTime>(nullable: false),
+                    EndTime = table.Column<DateTime>(nullable: false),
                     Location = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
