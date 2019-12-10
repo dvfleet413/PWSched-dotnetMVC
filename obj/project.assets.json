@@ -9479,7 +9479,7 @@
       "outputPath": "/Users/Dave/Projects/PWSched-dotnet-mvc/PWSched-dotnet-mvc/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/Dave/.nuget/NuGet/NuGet.Config"
+        "/Users/Dave/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"

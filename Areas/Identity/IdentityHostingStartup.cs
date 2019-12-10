@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PWSched_dotnet_mvc.Data;
 
+
 [assembly: HostingStartup(typeof(PWSched_dotnet_mvc.Areas.Identity.IdentityHostingStartup))]
 namespace PWSched_dotnet_mvc.Areas.Identity
 {
@@ -16,6 +17,8 @@ namespace PWSched_dotnet_mvc.Areas.Identity
         {
             builder.ConfigureServices((context, services) => {
             });
+
+            
         }
     }
 }
